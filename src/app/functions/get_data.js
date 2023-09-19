@@ -3,7 +3,7 @@ import axios from "axios";
 export const GetData = async () =>{
     try {
         // const getAxios = axios.defaults;
-        axios.defaults.baseURL = 'http://192.168.1.37:80';
+        axios.defaults.baseURL = 'http://localhost:80';
         axios.defaults.headers.post['Content-Type'] = 'application/json';
         axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
         const res = await axios.get('/api/resource/how?much=less');
